@@ -9,7 +9,7 @@
 
 
   <style>
-    * {
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,7 +21,7 @@ body {
   color: #102a27;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -55,7 +55,6 @@ body {
   color: #1a7d74;
 }
 
-/* Hero Section */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -87,7 +86,6 @@ body {
   border-radius: 4px;
 }
 
-/* Hero Image */
 .hero-image {
   position: relative;
 }
@@ -110,6 +108,110 @@ body {
   z-index: 1;
   border-radius: 4px;
 }
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 50px;
+  }
+
+  .hero {
+    padding: 60px 50px;
+  }
+
+  .hero-content h1 {
+    font-size: 58px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .hero-image img,
+  .image-border {
+    width: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 40px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 50px 40px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .hero-image {
+    margin-top: 40px;
+  }
+
+  .hero-image img,
+  .image-border {
+    width: 380px;
+  }
+
+  .image-border {
+    top: -20px;
+    right: -20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .hero-image img,
+  .image-border {
+    width: 300px;
+  }
+
+  .image-border {
+    top: -15px;
+    right: -15px;
+  }
+}
+
 .features {
   display: flex;
   justify-content: space-around;
@@ -127,20 +229,20 @@ body {
 }
 
 .icon {
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #e9f0ef;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 2px;
   box-shadow: 0 0 0 1px #d3e0dd;
 }
 
 .icon i {
   color: #0b615a;
-  font-size: 20px;
+  font-size: 5px;
 }
 
 .feature-box h3 {
@@ -237,7 +339,6 @@ body {
   margin-right: 8px;
 }
 
-/* Buttons and Socials */
 .history-buttons {
   display: flex;
   align-items: center;
@@ -275,7 +376,6 @@ body {
   background-color: #0b615a;
   color: white;
 }
-/* Section styling */
 .why-choose-us {
   text-align: center;
   padding: 80px 0;
@@ -324,7 +424,6 @@ body {
   line-height: 1.6;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .choose-grid {
     flex-direction: column;
@@ -372,7 +471,6 @@ body {
   font-size: 1.2rem;
 }
 
-/* Gallery Grid */
 .projects-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -395,7 +493,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Overlay on images */
 .overlay {
   position: absolute;
   bottom: 0;
@@ -417,7 +514,7 @@ body {
   font-size: 1rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 992px) {
   .projects-grid {
     grid-template-columns: 1fr;
@@ -446,7 +543,6 @@ body {
   align-items: start;
 }
 
-/* Left text side */
 .services-text h2 {
   font-size: 2.5rem;
   color: #083838;
@@ -469,7 +565,7 @@ body {
 .contact-box {
   display: flex;
   align-items: center;
-  background-color: #e5efef; /* light background */
+  background-color: #e5efef;
   width: fit-content;
   border-radius: 5px;
   overflow: hidden;
@@ -477,7 +573,7 @@ body {
 }
 
 .icon {
-  background-color: #126d6d; /* teal color */
+  background-color: #126d6d; 
   color: white;
   padding: 30px 40px;
   font-size: 40px;
@@ -502,8 +598,6 @@ body {
   color: #555;
 }
 
-
-/* Right grid */
 .services-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -530,7 +624,6 @@ body {
   font-size: 1rem;
 }
 
-/* Colors */
 .service-card.green {
   background-color: #0f5959;
   color: white;
@@ -541,13 +634,11 @@ body {
   color: #0f5959;
 }
 
-/* Hover Effect */
 .service-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
   .services-content {
     grid-template-columns: 1fr;
@@ -669,7 +760,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* ---------- IMAGE STYLING ---------- */
 .testimonial-image {
   position: relative;
   width: 380px;
@@ -697,7 +787,6 @@ body {
   border-radius: 4px;
 }
 
-/* ---------- CONTENT STYLING ---------- */
 .testimonial-content {
   max-width: 500px;
 }
@@ -735,7 +824,6 @@ body {
   margin: 0;
 }
 
-/* ---------- RESPONSIVE DESIGN ---------- */
 @media (max-width: 1024px) {
   .testimonial-container {
     gap: 40px;
@@ -793,7 +881,7 @@ body {
     height: 250px;
   }
 }
-/* General Reset */
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -801,7 +889,6 @@ body {
   color: #1d1d1d;
 }
 
-/* Newsletter Section */
 .newsletter {
   background-color: #e9f1ef;
   padding: 70px 5%;
@@ -815,7 +902,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* Left Image */
 .newsletter-image {
   flex: 1 1 400px;
 }
@@ -826,7 +912,6 @@ body {
   object-fit: cover;
 }
 
-/* Right Content */
 .newsletter-content {
   flex: 1 1 400px;
   max-width: 500px;
@@ -967,10 +1052,10 @@ body {
 
 
   </style>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+
 </head>
 <body>
-  <!-- Navbar -->
+
   <header class="navbar">
     <div class="logo">iSTUDIO</div>
     <nav>
@@ -987,7 +1072,7 @@ body {
     </nav>
   </header>
 
-  <!-- Hero Section -->
+ 
   <section class="hero">
     <div class="hero-content">
       <h1>We Make Your <br><span>Home</span> Better</h1>
@@ -1000,7 +1085,7 @@ body {
     </div>
   </section>
 
-    <!-- Features Section -->
+   
 <section class="features">
   <div class="feature-box">
     <div class="icon"><i class="fa-solid fa-couch"></i></div>
@@ -1022,7 +1107,7 @@ body {
     <h3>Budget Friendly</h3>
   </div>
 </section>
-<!-- History Section -->
+
 <section class="history">
   <div class="history-images">
     <img src="https://themewagon.github.io/iStudio/img/about-1.jpg" alt="Kitchen Design">
@@ -1116,14 +1201,14 @@ body {
 <section class="latest-projects">
   <div class="container">
     <div class="projects-grid">
-      <!-- Left Side -->
+      
       <div class="projects-info">
         <h2>Our Latest <span>PROJECTS</span></h2>
         <h1>6</h1>
         <p>of our latest projects</p>
       </div>
 
-      <!-- Right Side -->
+    
       <div class="projects-gallery">
         <div class="project-box">
           <img src="https://themewagon.github.io/iStudio/img/project-1.jpg" alt="Kitchen">
@@ -1179,7 +1264,7 @@ body {
 <section class="services-section">
   <div class="container">
     <div class="services-content">
-      <!-- Left Side -->
+  
       <div class="services-text">
         <h2>Our Creative <span>SERVICES</span></h2>
         <p>
@@ -1205,7 +1290,7 @@ body {
 
       </div>
 
-      <!-- Right Side -->
+    
       <div class="services-grid">
         <div class="service-card green">
           <h3>Interior Design</h3>
@@ -1333,12 +1418,11 @@ body {
 
 <section class="newsletter">
   <div class="newsletter-container">
-    <!-- Left Image -->
+   
     <div class="newsletter-image">
       <img src="https://themewagon.github.io/iStudio/img/newsletter.jpg" alt="Newsletter">
     </div>
 
-    <!-- Right Content -->
     <div class="newsletter-content">
       <h2>
         Subscribe the <span>NEWSLETTER</span>
@@ -1388,14 +1472,6 @@ body {
       © Your Site Name, All Right Reserved. Designed By HTML Codex. Distributed by ThemeWagon.
     </div>
   </footer>
-
-
-
-
-
-
-
-
 
   
 </body>
